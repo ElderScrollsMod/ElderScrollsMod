@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elderscrolls:blocks/oak_planks",
+    "up": "elderscrolls:blocks/crafting_table_top",
+    "north": "elderscrolls:blocks/crafting_table_front",
+    "east": "elderscrolls:blocks/crafting_table_side",
+    "south": "elderscrolls:blocks/crafting_table_side",
+    "west": "elderscrolls:blocks/crafting_table_side",
+    "particle": "elderscrolls:blocks/oak_planks"
+  }
+}

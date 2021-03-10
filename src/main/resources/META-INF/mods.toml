@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+license="Not specified"
+
+[[mods]]
+modId="elderscrolls"
+version="1.0.0"
+displayName="The Elder Scrolls Mod"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="thebe, MCreator"
+
+[[dependencies.elderscrolls]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

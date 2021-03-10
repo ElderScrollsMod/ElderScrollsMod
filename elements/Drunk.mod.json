@@ -1,0 +1,19 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Drunkenness ",
+    "effectName": "Drunk",
+    "icon": "drunk.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false
+  }
+}

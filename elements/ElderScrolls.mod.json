@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "Elder Scrolls",
+    "icon": {
+      "value": "CUSTOM:Logo"
+    },
+    "showSearch": true
+  }
+}

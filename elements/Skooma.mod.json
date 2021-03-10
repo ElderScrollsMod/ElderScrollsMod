@@ -1,0 +1,29 @@
+{
+  "_fv": 15,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "skooma",
+    "customModelName": "Normal",
+    "name": "Skooma",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElderScrolls"
+    },
+    "stackSize": 8,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 16,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "SkoomaFoodEaten"
+    }
+  }
+}

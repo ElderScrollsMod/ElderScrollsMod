@@ -1,0 +1,22 @@
+{
+  "gold_down_00": {
+    "category": "player",
+    "subtitle": "subtitles.gold_down_00",
+    "sounds": [
+      {
+        "name": "elderscrolls:gold_down_01",
+        "stream": false
+      }
+    ]
+  },
+  "gold_down_01": {
+    "category": "master",
+    "subtitle": "subtitles.gold_down_01",
+    "sounds": [
+      {
+        "name": "elderscrolls:gold_down_02",
+        "stream": false
+      }
+    ]
+  }
+}

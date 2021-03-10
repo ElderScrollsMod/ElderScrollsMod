@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elderscrolls:blocks/nirnroot",
+    "particle": "elderscrolls:blocks/nirnroot"
+  }
+}

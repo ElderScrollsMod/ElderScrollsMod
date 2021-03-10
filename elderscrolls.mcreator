@@ -1,0 +1,375 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "MoonSugar",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moon_sugar"
+    },
+    {
+      "name": "ElderScrolls",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "elder_scrolls"
+    },
+    {
+      "name": "MoonSugarFoodEaten",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moon_sugar_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkoomaFoodEaten",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skooma_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skooma",
+      "type": "food",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skooma"
+    },
+    {
+      "name": "MoonSugarRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moon_sugar_recipe"
+    },
+    {
+      "name": "Nirnroot",
+      "type": "plant",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nirnroot"
+    },
+    {
+      "name": "NirnrootBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nirnroot_block_is_placed_by",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Logo",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logo"
+    },
+    {
+      "name": "Breton",
+      "type": "mob",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "breton"
+    },
+    {
+      "name": "Imperial",
+      "type": "mob",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "imperial"
+    },
+    {
+      "name": "SkoomaRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skooma_recipe"
+    },
+    {
+      "name": "Septim",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold"
+    },
+    {
+      "name": "SeptimItemIsDroppedByPlayer",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "septim_item_is_dropped_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AlchemyTable",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alchemy_table"
+    },
+    {
+      "name": "AlchemyTableGUI",
+      "type": "gui",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alchemy_table_gui"
+    },
+    {
+      "name": "TheRift",
+      "type": "biome",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_rift"
+    },
+    {
+      "name": "Ale",
+      "type": "food",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ale"
+    },
+    {
+      "name": "NordMead",
+      "type": "food",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nord_mead"
+    },
+    {
+      "name": "AlcoholDrink",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alcohol_drink",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AlcoholLevel",
+      "type": "command",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alcohol_level"
+    },
+    {
+      "name": "ReadAlcoholLevel",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "read_alcohol_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drunk",
+      "type": "potion",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drunk"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "alcohol",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "gold_down_00",
+      "files": [
+        "gold_down_01"
+      ],
+      "category": "player",
+      "subtitle": "Gold Dropped"
+    },
+    {
+      "name": "gold_down_01",
+      "files": [
+        "gold_down_02"
+      ],
+      "category": "master",
+      "subtitle": "Gold Dropped"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.elderscrolls.gold": "Gold",
+      "item.elderscrolls.imperial_spawn_egg": "Imperial Spawn Egg",
+      "block.elderscrolls.nirnroot": "Nirnroot",
+      "item.minecraft.lingering_potion.effect.drunk": "Lingering Drunkenness ",
+      "item.minecraft.tipped_arrow.effect.drunk": "Arrow of Drunkenness ",
+      "item.minecraft.splash_potion.effect.drunk": "Splash Drunkenness ",
+      "entity.elderscrolls.breton": "Breton Citizen",
+      "subtitles.gold_down_00": "Gold Dropped",
+      "subtitles.gold_down_01": "Gold Dropped",
+      "item.minecraft.potion.effect.drunk": "Drunkenness ",
+      "subtitles.gold_down_02": "Gold Dropped",
+      "itemGroup.tabelder_scrolls": "Elder Scrolls",
+      "biome.elderscrolls.the_rift": "The Rift",
+      "item.elderscrolls.ale": "Ale",
+      "effect.drunk": "Drunk",
+      "entity.elderscrolls.imperial": "Imperial",
+      "item.elderscrolls.moon_sugar": "Moon Sugar",
+      "subtitles.nirnroot": "Nirnroot",
+      "item.elderscrolls.logo": "Logo",
+      "item.elderscrolls.breton_spawn_egg": "Breton Citizen Spawn Egg",
+      "item.elderscrolls.nord_mead": "Nord Mead",
+      "item.elderscrolls.skooma": "Skooma",
+      "block.elderscrolls.alchemy_table": "Alchemy Table"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "elderscrolls",
+    "modName": "The Elder Scrolls Mod",
+    "version": "1.0.0",
+    "author": "thebe, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.elderscrolls",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100103117
+}

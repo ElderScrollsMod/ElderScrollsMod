@@ -1,0 +1,7 @@
+{
+  "_fv": 15,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"String\" id=\"alcoholLevel\">alcoholLevel</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"145\" y=\"204\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"variables_set_text\"><field name=\"VAR\">local:alcoholLevel</field><value name=\"VAL\"><block type=\"text_format_number\"><value name=\"number\"><block type=\"variables_get_number\"><field name=\"VAR\">global:alcohol</field></block></value><value name=\"format\"><block type=\"text\"><field name=\"TEXT\">###</field></block></value></block></value><next><block type=\"world_send_chat\"><value name=\"text\"><block type=\"variables_get_text\"><field name=\"VAR\">local:alcoholLevel</field></block></value></block></next></block></next></block></xml>"
+  }
+}

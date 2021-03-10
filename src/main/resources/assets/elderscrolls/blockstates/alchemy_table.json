@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "elderscrolls:block/alchemy_table"
+    }
+  }
+}
