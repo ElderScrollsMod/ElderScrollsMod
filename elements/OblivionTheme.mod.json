@@ -1,0 +1,17 @@
+{
+  "_fv": 15,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "obldisc",
+    "name": "Oblivion Theme",
+    "description": "The Main theme of The Elder Scrolls IV: Oblivion",
+    "creativeTab": {
+      "value": "CUSTOM:ElderScrolls"
+    },
+    "music": {
+      "value": "CUSTOM:tes4title"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

@@ -325,6 +325,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "nibenay_basin"
+    },
+    {
+      "name": "OblivionTheme",
+      "type": "musicdisc",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oblivion_theme"
     }
   ],
   "variable_elements": [
@@ -351,17 +360,27 @@
       ],
       "category": "master",
       "subtitle": "Gold Dropped"
+    },
+    {
+      "name": "tes4title",
+      "files": [
+        "tes4title"
+      ],
+      "category": "music",
+      "subtitle": "Korea propaganda"
     }
   ],
   "language_map": {
     "en_us": {
       "item.elderscrolls.imperial_spawn_egg": "Imperial Spawn Egg",
+      "item.elderscrolls.oblivion_theme": "Oblivion Theme",
+      "subtitles.tes4title": "Korea propaganda",
       "item.minecraft.tipped_arrow.effect.drunk": "Arrow of Drunkenness ",
       "item.minecraft.splash_potion.effect.drunk": "Splash Drunkenness ",
       "entity.elderscrolls.breton": "Breton Citizen",
       "itemGroup.tabelder_scrolls": "Elder Scrolls",
-      "biome.elderscrolls.nibenay_basin": "Nibenay Basin",
       "effect.drunk": "Drunk",
+      "biome.elderscrolls.nibenay_basin": "Nibenay Basin",
       "item.elderscrolls.logo": "Logo",
       "item.elderscrolls.summer_bolete_cap": "Summer Bolete Cap",
       "item.elderscrolls.skooma": "Skooma",
@@ -373,6 +392,7 @@
       "item.elderscrolls.nord_spawn_egg": "Nord Spawn Egg",
       "subtitles.gold_down_01": "Gold Dropped",
       "item.minecraft.potion.effect.drunk": "Drunkenness ",
+      "item.elderscrolls.oblivion_theme.desc": "The Main theme of The Elder Scrolls IV: Oblivion",
       "subtitles.gold_down_02": "Gold Dropped",
       "entity.elderscrolls.nord": "Nord",
       "item.elderscrolls.ale": "Ale",

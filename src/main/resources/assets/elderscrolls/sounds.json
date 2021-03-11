@@ -18,5 +18,15 @@
         "stream": false
       }
     ]
+  },
+  "tes4title": {
+    "category": "music",
+    "subtitle": "subtitles.tes4title",
+    "sounds": [
+      {
+        "name": "elderscrolls:tes4title",
+        "stream": true
+      }
+    ]
   }
 }
