@@ -1,0 +1,96 @@
+{
+  "_fv": 15,
+  "_type": "biome",
+  "definition": {
+    "name": "Nibenay Basin",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "grassColor": {
+      "value": -10053376,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -13408768,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [
+      "MODIFIED"
+    ],
+    "grassPerChunk": 10,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 5,
+    "mushroomsPerChunk": 2,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 3,
+    "vanillaTreeType": "Mega pine trees",
+    "treeType": 1,
+    "minHeight": 9,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.SPRUCE_WOOD"
+    },
+    "treeBranch": {
+      "value": "Blocks.SAPLING#1"
+    },
+    "treeVines": {
+      "value": "Blocks.VINE"
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "plains",
+    "spawnWoodlandMansion": true,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
+    "oceanRuinType": "WARM",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "Lakes"
+    ],
+    "spawnEntries": []
+  }
+}
