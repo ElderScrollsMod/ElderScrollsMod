@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "elderscrolls:items/summerboletecap"
+    "layer0": "elderscrolls:blocks/summer_bolete_cap"
   }
 }

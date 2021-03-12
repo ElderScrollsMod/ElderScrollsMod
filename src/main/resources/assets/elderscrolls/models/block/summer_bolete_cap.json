@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elderscrolls:blocks/summer_bolete_cap",
+    "particle": "elderscrolls:blocks/summer_bolete_cap"
+  }
+}

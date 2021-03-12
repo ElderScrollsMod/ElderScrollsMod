@@ -171,7 +171,7 @@ public class AlchemyTableBlock extends ElderscrollsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(5, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(6, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}

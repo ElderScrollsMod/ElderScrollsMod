@@ -79,7 +79,7 @@
     "hasInventory": true,
     "guiBoundTo": "AlchemyTableGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 5,
+    "inventorySize": 6,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

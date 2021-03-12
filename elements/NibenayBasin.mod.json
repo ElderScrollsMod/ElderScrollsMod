@@ -10,11 +10,11 @@
       "value": "Blocks.DIRT#0"
     },
     "grassColor": {
-      "value": -10053376,
+      "value": -16725752,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -13408768,
+      "value": -15633408,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -35,14 +35,14 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "PLAINS",
     "parent": {
       "value": "No parent"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "heightVariation": 0.1,
     "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 10,
@@ -60,32 +60,32 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 3,
     "vanillaTreeType": "Mega pine trees",
-    "treeType": 1,
-    "minHeight": 9,
+    "treeType": 0,
+    "minHeight": 7,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "Blocks.SPRUCE_WOOD"
+      "value": "Blocks.LOG#1"
     },
     "treeBranch": {
-      "value": "Blocks.SAPLING#1"
+      "value": "Blocks.LEAVES#1"
     },
     "treeVines": {
-      "value": "Blocks.VINE"
+      "value": ""
     },
     "treeFruits": {
       "value": ""
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,
-    "spawnPillagerOutpost": true,
-    "villageType": "plains",
-    "spawnWoodlandMansion": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": true,
-    "spawnShipwreck": true,
-    "oceanRuinType": "WARM",
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
     "defaultFeatures": [
       "Caves",
       "Ores",

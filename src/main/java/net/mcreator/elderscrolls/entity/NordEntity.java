@@ -9,14 +9,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.ResourceLocation;
@@ -37,7 +33,6 @@ import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
@@ -54,7 +49,6 @@ public class NordEntity extends ElderscrollsModElements.ModElement {
 	public NordEntity(ElderscrollsModElements instance) {
 		super(instance, 24);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ModelRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -67,16 +61,9 @@ public class NordEntity extends ElderscrollsModElements.ModElement {
 				.setRegistryName("nord_spawn_egg"));
 	}
 
-	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 6, 2, 4));
-	}
-
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		DeferredWorkQueue.runLater(this::setupAttributes);
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
 	}
 	private static class ModelRegisterHandler {
 		@SubscribeEvent

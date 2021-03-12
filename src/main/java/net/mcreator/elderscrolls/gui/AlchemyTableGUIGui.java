@@ -122,19 +122,19 @@ public class AlchemyTableGUIGui extends ElderscrollsModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 16) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 54, 27) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 78, 16) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 78, 20) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 113, 16) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 102, 27) {
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 78, 55) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 78, 61) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 24, 55) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 9, 31) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(Items.GLASS_BOTTLE, (int) (1)).getItem() == stack.getItem());
@@ -144,9 +144,9 @@ public class AlchemyTableGUIGui extends ElderscrollsModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 6 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 6 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -314,7 +314,7 @@ public class AlchemyTableGUIGui extends ElderscrollsModElements.ModElement {
 			this.z = container.z;
 			this.entity = container.entity;
 			this.xSize = 176;
-			this.ySize = 166;
+			this.ySize = 178;
 		}
 		private static final ResourceLocation texture = new ResourceLocation("elderscrolls:textures/alchemy_table_gui.png");
 		@Override
@@ -349,6 +349,7 @@ public class AlchemyTableGUIGui extends ElderscrollsModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
+			this.font.drawString(ms, "Alchemy Table", 54, 4, -12829636);
 		}
 
 		@Override

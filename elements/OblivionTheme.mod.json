@@ -2,9 +2,9 @@
   "_fv": 15,
   "_type": "musicdisc",
   "definition": {
-    "texture": "obldisc",
-    "name": "Oblivion Theme",
-    "description": "The Main theme of The Elder Scrolls IV: Oblivion",
+    "texture": "music_disc_obliviontheme",
+    "name": "Music Disc",
+    "description": "Jeremy Soule - Reign of the Septims",
     "creativeTab": {
       "value": "CUSTOM:ElderScrolls"
     },
