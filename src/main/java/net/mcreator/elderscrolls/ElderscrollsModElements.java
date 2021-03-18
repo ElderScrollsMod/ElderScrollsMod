@@ -52,6 +52,8 @@ public class ElderscrollsModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("elderscrolls", "gold_down_01")));
 		sounds.put(new ResourceLocation("elderscrolls", "tes4title"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("elderscrolls", "tes4title")));
+		sounds.put(new ResourceLocation("elderscrolls", "breton_hit"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("elderscrolls", "breton_hit")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("elderscrolls").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

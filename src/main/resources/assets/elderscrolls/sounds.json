@@ -28,5 +28,14 @@
         "stream": true
       }
     ]
+  },
+  "breton_hit": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "elderscrolls:generic_hit_00023796_1",
+        "stream": false
+      }
+    ]
   }
 }

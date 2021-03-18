@@ -78,7 +78,7 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:breton_hit"
     },
     "deathSound": {
       "value": "entity.generic.death"
