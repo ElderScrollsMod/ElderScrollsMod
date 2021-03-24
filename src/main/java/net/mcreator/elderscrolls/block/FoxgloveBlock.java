@@ -10,9 +10,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.gen.feature.FlowersFeature;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.DefaultFlowersFeature;
+import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
@@ -26,7 +26,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
-import net.minecraft.potion.Effects;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -34,12 +33,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.SugarCaneBlock;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.elderscrolls.procedures.SummerBoleteCapAdditionalGenerationConditionProcedure;
 import net.mcreator.elderscrolls.itemgroup.ElderScrollsItemGroup;
 import net.mcreator.elderscrolls.ElderscrollsModElements;
 
@@ -47,14 +45,12 @@ import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-import com.google.common.collect.ImmutableMap;
-
 @ElderscrollsModElements.ModElement.Tag
-public class SummerBoleteCapBlock extends ElderscrollsModElements.ModElement {
-	@ObjectHolder("elderscrolls:summer_bolete_cap")
+public class FoxgloveBlock extends ElderscrollsModElements.ModElement {
+	@ObjectHolder("elderscrolls:foxglove")
 	public static final Block block = null;
-	public SummerBoleteCapBlock(ElderscrollsModElements instance) {
-		super(instance, 28);
+	public FoxgloveBlock(ElderscrollsModElements instance) {
+		super(instance, 30);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -78,12 +74,7 @@ public class SummerBoleteCapBlock extends ElderscrollsModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		FlowersFeature feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
-			@Override
-			public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
-				return block.getDefaultState();
-			}
-
+		Feature<BlockClusterFeatureConfig> feature = new Feature<BlockClusterFeatureConfig>(BlockClusterFeatureConfig.field_236587_a_) {
 			@Override
 			public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 				RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
@@ -92,35 +83,40 @@ public class SummerBoleteCapBlock extends ElderscrollsModElements.ModElement {
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				int x = pos.getX();
-				int y = pos.getY();
-				int z = pos.getZ();
-				if (!SummerBoleteCapAdditionalGenerationConditionProcedure.executeProcedure(ImmutableMap.of()))
-					return false;
-				return super.generate(world, generator, random, pos, config);
+				int generated = 0;
+				for (int j = 0; j < 5; ++j) {
+					BlockPos blockpos = pos.add(random.nextInt(4) - random.nextInt(4), 0, random.nextInt(4) - random.nextInt(4));
+					if (world.isAirBlock(blockpos)) {
+						BlockPos blockpos1 = blockpos.down();
+						int k = 1 + random.nextInt(random.nextInt(3) + 1);
+						k = Math.min(3, k);
+						for (int l = 0; l < k; ++l) {
+							if (block.getDefaultState().isValidPosition(world, blockpos)) {
+								world.setBlockState(blockpos.up(l), block.getDefaultState(), 2);
+								generated++;
+							}
+						}
+					}
+				}
+				return generated > 0;
 			}
 		};
-		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> (ConfiguredFeature<?, ?>) feature
-				.withConfiguration(
+		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION)
+				.add(() -> (ConfiguredFeature<?, ?>) feature.withConfiguration(
 						(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 								.tries(64).build())
-				.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(1));
+						.withPlacement(Features.Placements.PATCH_PLACEMENT).func_242731_b(5));
 	}
-	public static class BlockCustomFlower extends FlowerBlock {
+	public static class BlockCustomFlower extends SugarCaneBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
-					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("summer_bolete_cap");
+			super(Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT).hardnessAndResistance(0f, 0f)
+					.setLightLevel(s -> 0));
+			setRegistryName("foxglove");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 100;
-		}
-
-		@Override
-		public Block.OffsetType getOffsetType() {
-			return Block.OffsetType.NONE;
 		}
 
 		@Override
@@ -139,6 +135,25 @@ public class SummerBoleteCapBlock extends ElderscrollsModElements.ModElement {
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
 			return PlantType.PLAINS;
+		}
+
+		@Override
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+			if (!state.isValidPosition(world, pos)) {
+				world.destroyBlock(pos, true);
+			} else if (world.isAirBlock(pos.up())) {
+				int i = 1;
+				for (; world.getBlockState(pos.down(i)).getBlock() == this; ++i);
+				if (i < 3) {
+					int j = state.get(AGE);
+					if (j == 15) {
+						world.setBlockState(pos.up(), getDefaultState());
+						world.setBlockState(pos, state.with(AGE, 0), 4);
+					} else {
+						world.setBlockState(pos, state.with(AGE, j + 1), 4);
+					}
+				}
+			}
 		}
 	}
 }

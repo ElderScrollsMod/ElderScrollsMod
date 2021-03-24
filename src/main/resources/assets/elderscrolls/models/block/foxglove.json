@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elderscrolls:blocks/foxglove_3",
+    "particle": "elderscrolls:blocks/foxglove_3"
+  }
+}

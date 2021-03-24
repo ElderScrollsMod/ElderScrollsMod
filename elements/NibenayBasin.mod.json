@@ -91,6 +91,34 @@
       "Ores",
       "Lakes"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Breton"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 2,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Imperial"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Nord"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 1,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

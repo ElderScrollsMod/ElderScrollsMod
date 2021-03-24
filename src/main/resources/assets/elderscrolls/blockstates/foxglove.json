@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=1": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=2": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=3": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=4": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=5": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=6": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=7": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=8": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=9": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=10": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=11": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=12": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=13": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=14": {
+      "model": "elderscrolls:block/foxglove"
+    },
+    "age=15": {
+      "model": "elderscrolls:block/foxglove"
+    }
+  }
+}

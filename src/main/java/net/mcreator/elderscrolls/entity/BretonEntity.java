@@ -98,7 +98,7 @@ public class BretonEntity extends ElderscrollsModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-			setCustomName(new StringTextComponent("Breton"));
+			setCustomName(new StringTextComponent("Breton Citizen"));
 			setCustomNameVisible(true);
 			enablePersistence();
 		}

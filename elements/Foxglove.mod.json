@@ -3,19 +3,19 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "summer_bolete_cap",
-    "textureBottom": "",
+    "texture": "foxglove_3",
+    "textureBottom": "foxglove_1",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "normal",
+    "plantType": "growapable",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Summer Bolete",
+    "name": "Foxglove",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:ElderScrolls"
@@ -40,11 +40,11 @@
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "NONE",
+    "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
-    "frequencyOnChunks": 1,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -52,9 +52,6 @@
       {
         "value": "CUSTOM:NibenayBasin"
       }
-    ],
-    "generateCondition": {
-      "name": "SummerBoleteCapAdditionalGenerationCondition"
-    }
+    ]
   }
 }

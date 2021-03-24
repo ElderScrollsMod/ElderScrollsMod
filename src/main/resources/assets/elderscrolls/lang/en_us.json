@@ -13,7 +13,7 @@
   "item.elderscrolls.skooma": "Skooma",
   "block.elderscrolls.alchemy_table": "Alchemy Table",
   "item.elderscrolls.gold": "Gold",
-  "block.elderscrolls.summer_bolete_cap": "Summer Bolete Cap",
+  "block.elderscrolls.summer_bolete_cap": "Summer Bolete",
   "block.elderscrolls.nirnroot": "Nirnroot",
   "item.minecraft.lingering_potion.effect.drunk": "Lingering Drunkenness ",
   "subtitles.gold_down_00": "Gold Dropped",
@@ -28,5 +28,6 @@
   "item.elderscrolls.moon_sugar": "Moon Sugar",
   "subtitles.nirnroot": "Nirnroot",
   "item.elderscrolls.breton_spawn_egg": "Breton Citizen Spawn Egg",
+  "block.elderscrolls.foxglove": "Foxglove",
   "item.elderscrolls.nord_mead": "Nord Mead"
 }

@@ -3,7 +3,7 @@
   "_type": "mob",
   "definition": {
     "mobName": "Breton Citizen",
-    "mobLabel": "Breton",
+    "mobLabel": "Breton Citizen",
     "mobModelName": "Biped",
     "mobModelTexture": "breton.png",
     "mobModelGlowTexture": "",

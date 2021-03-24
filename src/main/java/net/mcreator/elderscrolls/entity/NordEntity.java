@@ -54,7 +54,7 @@ public class NordEntity extends ElderscrollsModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.7f, 2.1f)).build("nord")
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 2.1f)).build("nord")
 						.setRegistryName("nord");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10066432, -13421773, new Item.Properties().group(ElderScrollsItemGroup.tab))
@@ -98,7 +98,7 @@ public class NordEntity extends ElderscrollsModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-			setCustomName(new StringTextComponent("Nord"));
+			setCustomName(new StringTextComponent("Nord Citizen"));
 			setCustomNameVisible(true);
 		}
 
